@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Battle-Buddy | Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .page-content { display: none; }
+        .page-content.active { display: block; }
+        .nav-link.active {
+            background-color: #166534; /* A darker green */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="bg-green-900 text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto max-w-5xl flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Golf Battle-Buddy</h1>
+            <nav class="mt-3 sm:mt-0" aria-label="main navigation">
+                <button class="nav-link px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700" data-page="home" aria-label="Home">Home</button>
+                <button class="nav-link px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700" data-page="about" aria-label="About">About</button>
+                <button class="nav-link px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700" data-page="app-info" aria-label="Application Info">App Info</button>
+                <button class="nav-link px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700" data-page="marketing" aria-label="Marketing">Marketing</button>
+                <button class="nav-link px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700" data-page="user-guide" aria-label="User Guide">User Guide</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto max-w-5xl p-4 sm:p-8">
+
+        <!-- Home Page -->
+        <section id="page-home" class="page-content">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <!-- Hero Image -->
+                <div class="h-64 sm:h-80 bg-cover bg-center" style="background-image: url('https://placehold.co/1200x400/228B22/FFFFFF?text=Golf+Battle-Buddy&font=inter');" role="img" aria-label="A beautiful golf course fairway">
+                    <div class="h-full w-full bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-wide">Golf Battle-Buddy</h2>
+                            <p class="text-4xl sm:text-5xl font-extrabold text-white mt-2">Never Golf Alone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 sm:p-10">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Meet Your Golf Battle-Buddy</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        This application is a web based prototype designed to help solve the challenge of finding a golf partner. The "Golf Battle-Buddy" app aims to provide a new way for service members, veterans, and authorized patrons to connect make new friends and enjoy a stress free time out on the links.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About You Page -->
+        <section id="page-about" class="page-content">
+            <div class="bg-white rounded-lg shadow-xl p-6 sm:p-10">
+                <h2 class="text-3xl font-bold text-gray-900 border-b pb-4 mb-6">About Me and Contact Info</h2>
+                <div class="space-y-4 text-lg text-gray-700">
+                    <p>
+                        This application was designed and developed by Jonathan King. As student, veteran and golf enthusiast, I saw a need for an easy to use tool for the local military community to use connect. With it being such a trasient community it can be hard to find a partner for a tee time especially with all the varing schedules. This app aims to fix that.
+                    </p>
+                    <p class="text-lg font-bold text-gray-700 border mb-6">
+                        Questions or comments you can send to: jjking25@hotmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Prototype Info Page -->
+        <section id="page-app-info" class="page-content">
+            <div class="bg-white rounded-lg shadow-xl p-6 sm:p-10">
+                <h2 class="text-3xl font-bold text-gray-900 border-b pb-4 mb-6">Application Information</h2>
+                <div class="space-y-6 text-gray-700">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Core Features</h3>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li><strong>Real-time Tee Times:</strong> See available groups for today and tomorrow.</li>
+                            <li><strong>Create a Group:</strong> Don't see a time you like? Create your own group and let others join you.</li>
+                            <li><strong>Join a Group:</strong> Instantly join an existing group with the click of a button.</li>
+                            <li><strong>Skill Level Display:</strong> Players can set their skill level (Beginner, Intermediate, Advanced) to find the right match.</li>
+                            <li><strong>Event Calendar:</strong> A simple view of upcoming official course events like tournaments and scrambles.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Technical Specifications</h3>
+                         <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li><strong>Frontend:</strong> HTML5, **Tailwind CSS**, and modern JavaScript.</li>
+                            <li><strong>Backend:</strong> Amazon Web Services S3 and Elastic Beanstalk, Python(Flask).</li>
+                            <li><strong>Database:</strong> Amazon Web Services RDS, Google Cloud.</li>
+                            <li><strong>Authentication:</strong> Session and Token based Login.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Marketing Page -->
+        <section id="page-marketing" class="page-content">
+            <div class="bg-white rounded-lg shadow-xl p-6 sm:p-10">
+                <h2 class="text-3xl font-bold text-gray-900 border-b pb-4 mb-6">Marketing</h2>
+                <div class="space-y-6 text-gray-700">
+                     <div>
+                        <h3 class="text-2xl font-semibold mb-2">The Problem</h3>
+                        <p class="text-lg">You want to play a round of golf, but your usual partners are busy or deployed. You're stuck going to the course as a single, hoping to get paired up, or not going at all.</p>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-semibold mb-2">The Solution: Golf Battle-Buddy</h3>
+                        <p class="text-lg">A simple web app just for local golf course.patrons to use. No downloads, no complex sign-ups. Just log in, see who's playing, and request to join them. Better than the white board method some pro-shops use to track tee times.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Target Audience</h3>
+                         <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Active Duty Service Members</li>
+                            <li>Reservists & National Guard</li>
+                            <li>Veterans & Retirees</li>
+                            <li>Authorized Civilians, Family Members & Patrons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- User Guide Page -->
+        <section id="page-user-guide" class="page-content">
+            <div class="bg-white rounded-lg shadow-xl p-6 sm:p-10">
+                <h2 class="text-3xl font-bold text-gray-900 border-b pb-4 mb-6">How-To: User Guide</h2>
+                <div class="space-y-8 text-gray-700">
+
+                    <!-- Step 1 -->
+                    <div>
+                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-green-900 text-white font-bold text-2xl mb-3">1</span>
+                        <h3 class="text-2xl font-semibold mb-2">Log In</h3>
+                        <p class="text-lg">Click the "Login" button in the header. Since this is a prototype, you can enter any username and password to log in. Your username will be used to identify you in groups.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div>
+                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-green-900 text-white font-bold text-2xl mb-3">2</span>
+                        <h3 class="text-2xl font-semibold mb-2">Create a Group</h3>
+                         <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Once logged in, the "Create New Tee Time" form will appear.</li>
+                            <li>Your name is auto-filled.</li>
+                            <li>Select your skill level (e.g., "Beginner").</li>
+                            <li>Choose a date ("Today" or "Tomorrow") and a time.</li>
+                            <li>Click "Create Group." Your new group will instantly appear in the list.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div>
+                        <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-green-900 text-white font-bold text-2xl mb-3">3</span>
+                        <h3 class="text-2xl font-semibold mb-2">Join a Group</h3>
+                         <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>Find a group in the "Tee Times" list that isn't full.</li>
+                            <li>Click the green "Join Group" button.</li>
+                            <li>A pop-up will ask you to confirm your skill level.</li>
+                            <li>Click "Join" in the pop-up, and your name will be added to the list for everyone to see.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center p-6 text-gray-600 text-sm">
+        <p>A project by Jonathan King. Not an official MWR or DoD application.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pageLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page-content');
+            
+            // Function to show a page
+            function showPage(pageId) {
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+                // Show the target page
+                const targetPage = document.getElementById('page-' + pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                }
+                
+                // Update active link
+                pageLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.dataset.page === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Update page title
+                const pageName = pageId.charAt(0).toUpperCase() + pageId.slice(1).replace('-', ' ');
+                document.title = `Golf Battle-Buddy | ${pageName}`;
+            }
+
+            // Add click event listeners to nav links
+            pageLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = e.target.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // Show the home page by default
+            showPage('home');
+        });
+    </script>
+</body>
+</html>
+
